@@ -1,6 +1,6 @@
 using System;
 
-namespace Infrastructure.StateMachine
+namespace GDK.StateMachine
 {
     public interface IStateMachine<TState> where TState : Enum
     {
