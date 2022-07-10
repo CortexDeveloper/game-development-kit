@@ -1,0 +1,17 @@
+{
+    "name": "com.cortexdeveloper.gdk",
+    "version": "0.0.1",
+    "displayName": "GameDevelopmentKit",
+    "author": {
+         "name": "cortexdeveloper", 
+         "url": "https://github.com/CortexDeveloper/"
+    },
+    "unity": "2021.2",
+    "description": "Banch of tools and services that most games need.",
+    "keywords": [ 
+        "Dev Kit", 
+        "Game Tools"
+    ],
+    "license": "MIT",
+    "dependencies": {}
+}
