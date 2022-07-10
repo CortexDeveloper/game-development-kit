@@ -63,3 +63,4 @@ crashlytics-build.properties
 **/*.index
 .DS_Store
 *.dwlt
+*.idea
