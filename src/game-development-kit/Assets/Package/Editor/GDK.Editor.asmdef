@@ -1,7 +1,10 @@
 {
     "name": "GDK.Editor",
     "rootNamespace": "GDK.Editor",
-    "references": [],
+    "references": [
+        "GUID:84651a3751eca9349aac36a66bba901b",
+        "GUID:77d519b62f85740d98b9cac4cd81524f"
+    ],
     "includePlatforms": [
         "Editor"
     ],
