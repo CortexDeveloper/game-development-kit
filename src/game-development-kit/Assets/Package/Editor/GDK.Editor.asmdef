@@ -1,6 +1,6 @@
 {
     "name": "GDK.Editor",
-    "rootNamespace": "",
+    "rootNamespace": "GDK.Editor",
     "references": [],
     "includePlatforms": [
         "Editor"
