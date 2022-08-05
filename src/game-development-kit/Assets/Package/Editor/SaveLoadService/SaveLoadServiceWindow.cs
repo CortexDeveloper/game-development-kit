@@ -20,7 +20,7 @@ namespace GDK.Editor.Package.Editor.SaveLoadService
 
         private void OnEnable()
         {
-            _saveLoadService = new DefaultSaveLoadService(new PlayerPrefsStorage(), );
+            _saveLoadService = new DefaultSaveLoadService(new PlayerPrefsStorage(), new JsonSerializer());
         }
 
         private void OnGUI()
