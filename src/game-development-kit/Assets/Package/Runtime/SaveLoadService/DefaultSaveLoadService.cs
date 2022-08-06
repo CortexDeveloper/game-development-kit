@@ -1,3 +1,5 @@
+using System.Data.SqlTypes;
+
 namespace GDK.SaveLoadService
 {
     public class DefaultSaveLoadService : ISaveLoadService<SaveKey>
@@ -14,22 +16,24 @@ namespace GDK.SaveLoadService
         public void Save<TData>(SaveKey key, TData data)
         {
             string serializedData = Serializer.Serialize(data);
-            // SavesStorage.Save(key.na, serializedData);
+            SavesStorage.Save(key.Name, serializedData);
         }
 
-        public TData Load<TData>()
+        public TData Load<TData>(SaveKey key)
         {
-            throw new System.NotImplementedException();
+            string serializedData = SavesStorage.Load(key.Name);
+
+            return Serializer.Deserialize<TData>(serializedData);
         }
 
         public void Reset(SaveKey key)
         {
-            throw new System.NotImplementedException();
+            SavesStorage.Reset(key.Name);
         }
 
         public void ResetAll()
         {
-            throw new System.NotImplementedException();
+            SavesStorage.ResetAll();
         }
     }
 }

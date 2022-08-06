@@ -7,7 +7,7 @@ namespace GDK.SaveLoadService
     {
         public void Save(string key, string serializedData)
         {
-            PlayerPrefs.SetString(serializedData, String.Empty);
+            PlayerPrefs.SetString(key, serializedData);
             PlayerPrefs.Save();
         }
 

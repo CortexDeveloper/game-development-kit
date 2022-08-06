@@ -6,7 +6,7 @@ namespace GDK.SaveLoadService
         
         void Save<TData>(TSaveKey key, TData data);
         
-        TData Load<TData>();
+        TData Load<TData>(TSaveKey key);
         
         void Reset(TSaveKey key);
 
